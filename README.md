@@ -44,9 +44,12 @@
 - Tuân thủ các quy tắc và tiêu chuẩn trong dự án hoặc nhóm làm việc.
 
 ## Cấu trúc chương trình
+#
 backend > library-version-2
   - Dùng IDM là intellij
   - Mở thư mục project gốc load maven r chạy
+
+#
 frontend > library-version-2-frontend
   - Cài node bản 20.12.2
   - Vô thư mục gốc, mở cmd nhập "npm i" + enter
