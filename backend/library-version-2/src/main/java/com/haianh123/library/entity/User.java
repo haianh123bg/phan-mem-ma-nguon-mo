@@ -44,6 +44,9 @@ public class User extends BaseEntity<Long> implements UserDetails, Serializable 
     @Column(name = "verify_code")
     private String verifyCode;
 
+    @Column(name = "verify_number_of_times")
+    private int verifyNumberOfTimes;
+
     @Column(name = "gender")
     private Gender gender;
 
@@ -59,7 +62,7 @@ public class User extends BaseEntity<Long> implements UserDetails, Serializable 
     @OneToMany(mappedBy = "user")
     private List<ReturnSlipBook> returnSlipBooks;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "user_has_role",
             joinColumns = @JoinColumn(name = "user_id"),

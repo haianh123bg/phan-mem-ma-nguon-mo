@@ -19,12 +19,15 @@ public enum ErrorCode {
     BOOK_NOT_EXISTED(1009,"Book not exist", HttpStatus.NOT_FOUND),
     CATEGORY_NOT_EXISTED(1010,"Category not exist", HttpStatus.NOT_FOUND),
     AUTHOR_NOT_EXISTED(1011,"Author not exist", HttpStatus.NOT_FOUND),
-    PUBLISHER_NOT_EXISTED(1011,"Publisher not exist", HttpStatus.NOT_FOUND),
-    BORROWING_FORM_NOT_FOUND(1017,"Phiếu mượn không tồn tại", HttpStatus.NOT_FOUND),
-    CAN_NOT_REMOVE_CATEGORY(1013,"Cann't remove a category", HttpStatus.BAD_REQUEST),
-    BOOK_NOT_AVAILABLE(1014,"Đã hết sách này!", HttpStatus.BAD_REQUEST),
-    INVALID_CREDENTIALS(1014,"Mẩu khẩu hoặc email sai!", HttpStatus.BAD_REQUEST),
-    WRONG_VERIFY_KEYACTIVE(1012,"Mã xác minh sai", HttpStatus.BAD_REQUEST);
+    PUBLISHER_NOT_EXISTED(1012,"Publisher not exist", HttpStatus.NOT_FOUND),
+    BORROWING_FORM_NOT_FOUND(1013,"Phiếu mượn không tồn tại", HttpStatus.NOT_FOUND),
+    CAN_NOT_REMOVE_CATEGORY(1014,"Cann't remove a category", HttpStatus.BAD_REQUEST),
+    BOOK_NOT_AVAILABLE(1015,"Đã hết sách này!", HttpStatus.BAD_REQUEST),
+    INVALID_CREDENTIALS(1016,"Mẩu khẩu hoặc email sai!", HttpStatus.BAD_REQUEST),
+    WRONG_VERIFY_KEYACTIVE(1016,"Mã xác minh sai", HttpStatus.BAD_REQUEST),
+    ACCOUNT_IS_BLOCK(1017,"Tài khoản bị cấm hoạt động", HttpStatus.BAD_REQUEST),
+    VERIFY_CODE_EXPIRED(1018,"Quá số lần xác thực", HttpStatus.BAD_REQUEST),
+    TOKEN_INVALID(1019,"Token sai hoặc đã hết hạn", HttpStatus.BAD_REQUEST);
 
     ErrorCode(int code, String message, HttpStatusCode statusCode){
         this.code = code;
