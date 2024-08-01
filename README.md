@@ -1,4 +1,4 @@
-# HỆ THỐNG QUẢN LÝ THƯ VIỆN
+# HỆ THỐNG QUẢN LÝ VÀ BÁN LAPTOP
 ## QUY TẮC LÀM VIỆC 
 ### Trước Mỗi Phiên Làm Việc
 1. **Pull Code Mới Nhất:**
